@@ -50,7 +50,12 @@ ponte-digital/
 - formulários HTML5;
 - validação nativa do navegador;
 - recursos de acessibilidade;
-- CSS mínimo com variáveis da identidade visual.
+- CSS3 com Design System e CSS Variables;
+- CSS Grid, incluindo layout estrutural de 12 colunas;
+- Flexbox, responsividade e cinco breakpoints;
+- JavaScript nativo;
+- menu hambúrguer acessível;
+- pseudo-classes, pseudo-elementos e `prefers-reduced-motion`.
 
 ## Validações
 
@@ -61,7 +66,7 @@ O formulário utiliza `required`, `type="email"`, `type="date"`, `type="tel"`, `
 - CEP: formato `00000-000`;
 - e-mail: validação do tipo de campo pelo navegador.
 
-As máscaras são representadas por `placeholder` e `pattern`, conforme a etapa acadêmica. Não há JavaScript para validação.
+As máscaras são representadas por `placeholder` e `pattern`, com aplicação visual de CPF, telefone e CEP por JavaScript nativo. A validação continua sendo feita pelas regras HTML5 do navegador.
 
 ## Acessibilidade
 
@@ -77,6 +82,16 @@ A logo e as cinco imagens institucionais foram incluídas no projeto. As imagens
 - `img/projetos/mentoria-tech.webp`;
 - `img/projetos/descarte-consciente.webp`.
 
+## Experiência Prática II
+
+Nesta etapa, o projeto recebeu um Design System com variáveis de cor, espaçamento, raios e sombras; layout com Grid de 12 colunas; cards responsivos; Flexbox no cabeçalho, navegação, rodapé e feedback; cinco breakpoints (`480px`, `768px`, `1024px`, `1280px` e `1440px`); menu hambúrguer com `aria-expanded`; máscaras funcionais; estados de foco, hover, válido, inválido, ativo e desabilitado; toast, alerta, badges e modal acessíveis; além de suporte a `prefers-reduced-motion`.
+
 ## Evolução futura
 
-Nas próximas experiências práticas, o projeto poderá receber CSS3 com layout responsivo, JavaScript para interações, Git/GitHub, otimizações, CI/CD e deploy com HTTPS.
+Nas próximas experiências práticas, o projeto poderá receber melhorias de acessibilidade avançada, otimizações, CI/CD e deploy com HTTPS.
+
+## Redesign visual — Experiência Prática II
+
+A interface foi reorganizada com visual institucional moderno, hero em duas colunas, indicadores de impacto acadêmicos, seção sobre, missão, valores, chamadas para ação e footer com navegação, contato e newsletter. A nova página `sobre.html` mantém explícito que a ONG é fictícia e acadêmica.
+
+O CSS usa tokens de Design System, Grid e Flexbox nativos, cinco breakpoints (480, 768, 1024, 1280 e 1440px), estados de foco/hover e `prefers-reduced-motion`. O JavaScript mantém validações, máscaras, menu acessível, filtros visuais, toast, alerta e modal.

@@ -4,3 +4,12 @@ Thumbs.db
 .idea/
 *.log
 *.zip
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+*.tmp

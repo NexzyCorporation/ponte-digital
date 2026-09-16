@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 720" preserveAspectRatio="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="blueRibbon" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#0B2A5B"/>
+      <stop offset="1" stop-color="#087BFF"/>
+    </linearGradient>
+  </defs>
+  <path fill="#071D38" d="M0 0h116C95 142 94 247 137 360 94 473 95 578 116 720H0Z"/>
+  <path fill="url(#blueRibbon)" d="M76 0h42C96 146 96 247 142 360 96 473 96 574 118 720H76C57 575 57 473 101 360 57 247 57 145 76 0Z"/>
+  <path fill="#041326" fill-opacity=".72" d="M118 0h8c-17 146-14 247 27 360-41 113-44 214-27 360h-8c-22-146-22-247 24-360C96 247 96 146 118 0Z"/>
+</svg>
