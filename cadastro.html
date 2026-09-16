@@ -1,116 +1,244 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cadastre-se para participar da ONG Ponte Digital.">
-    <title>Participe | Ponte Digital</title>
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <header>
-      <a href="index.html" aria-label="Ponte Digital — página inicial">
-        <img src="img/logo/ponte-digital-logo.png" alt="Logo da ONG Ponte Digital" width="240" height="240">
-      </a>
-      <p>Tecnologia conectando oportunidades.</p>
-      <nav aria-label="Navegação principal">
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="cadastro.html" aria-current="page">Participe</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section aria-labelledby="titulo-principal">
-        <h1 id="titulo-principal">Participe da Ponte Digital</h1>
-        <p>Preencha seus dados para contribuir como voluntário, doador ou mentor. Os campos marcados como obrigatórios precisam ser preenchidos.</p>
-
-        <form action="#" method="post">
-          <fieldset>
-            <legend>Dados pessoais</legend>
-            <p>
-              <label for="nome">Nome completo</label><br>
-              <input id="nome" name="nome" type="text" autocomplete="name" minlength="3" maxlength="100" required>
-            </p>
-            <p>
-              <label for="email">E-mail</label><br>
-              <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
-            </p>
-            <p>
-              <label for="cpf">CPF</label><br>
-              <input id="cpf" name="cpf" type="text" inputmode="numeric" placeholder="000.000.000-00" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" title="Formato esperado: 000.000.000-00" maxlength="14" required>
-            </p>
-            <p>
-              <label for="nascimento">Data de nascimento</label><br>
-              <input id="nascimento" name="nascimento" type="date" required>
-            </p>
-          </fieldset>
-
-          <fieldset>
-            <legend>Contato e endereço</legend>
-            <p>
-              <label for="telefone">Telefone</label><br>
-              <input id="telefone" name="telefone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(00) 00000-0000" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" title="Formato esperado: (00) 00000-0000" maxlength="15" required>
-            </p>
-            <p>
-              <label for="cep">CEP</label><br>
-              <input id="cep" name="cep" type="text" autocomplete="postal-code" inputmode="numeric" placeholder="00000-000" pattern="[0-9]{5}-[0-9]{3}" title="Formato esperado: 00000-000" maxlength="9" required>
-            </p>
-            <p>
-              <label for="endereco">Endereço</label><br>
-              <input id="endereco" name="endereco" type="text" autocomplete="address-line1" minlength="5" maxlength="150" required>
-            </p>
-            <p>
-              <label for="cidade">Cidade</label><br>
-              <input id="cidade" name="cidade" type="text" autocomplete="address-level2" minlength="2" maxlength="80" required>
-            </p>
-            <p>
-              <label for="estado">Estado</label><br>
-              <select id="estado" name="estado" autocomplete="address-level1" required>
-                <option value="">Selecione</option>
-                <option value="AC">Acre</option><option value="AL">Alagoas</option><option value="AP">Amapá</option><option value="AM">Amazonas</option><option value="BA">Bahia</option><option value="CE">Ceará</option><option value="DF">Distrito Federal</option><option value="ES">Espírito Santo</option><option value="GO">Goiás</option><option value="MA">Maranhão</option><option value="MT">Mato Grosso</option><option value="MS">Mato Grosso do Sul</option><option value="MG">Minas Gerais</option><option value="PA">Pará</option><option value="PB">Paraíba</option><option value="PR">Paraná</option><option value="PE">Pernambuco</option><option value="PI">Piauí</option><option value="RJ">Rio de Janeiro</option><option value="RN">Rio Grande do Norte</option><option value="RS">Rio Grande do Sul</option><option value="RO">Rondônia</option><option value="RR">Roraima</option><option value="SC">Santa Catarina</option><option value="SP">São Paulo</option><option value="SE">Sergipe</option><option value="TO">Tocantins</option>
-              </select>
-            </p>
-          </fieldset>
-
-          <fieldset>
-            <legend>Forma de participação</legend>
-            <p>Como você deseja participar?</p>
-            <p><input id="voluntario" name="participacao" type="radio" value="voluntario" required> <label for="voluntario">Voluntário</label></p>
-            <p><input id="doador" name="participacao" type="radio" value="doador"> <label for="doador">Doador</label></p>
-            <p><input id="mentor" name="participacao" type="radio" value="mentor"> <label for="mentor">Mentor de tecnologia</label></p>
-            <p><input id="doador-equipamentos" name="participacao" type="radio" value="doador-equipamentos"> <label for="doador-equipamentos">Doador de equipamentos</label></p>
-            <p>
-              <label for="area">Área de interesse</label><br>
-              <select id="area" name="area" required>
-                <option value="">Selecione uma área</option>
-                <option value="conecta-jovem">Conecta Jovem</option>
-                <option value="pc-para-todos">PC para Todos</option>
-                <option value="mentoria-tech">Mentoria Tech</option>
-                <option value="descarte-consciente">Descarte Consciente</option>
-              </select>
-            </p>
-            <p>
-              <label for="mensagem">Mensagem ou observações</label><br>
-              <textarea id="mensagem" name="mensagem" rows="5" cols="40" maxlength="500"></textarea>
-            </p>
-            <p>
-              <input id="termos" name="termos" type="checkbox" required>
-              <label for="termos">Li e concordo com os termos de participação e com o tratamento dos dados informados para esta finalidade.</label>
-            </p>
-          </fieldset>
-          <p><button type="submit">Enviar cadastro</button></p>
-        </form>
-      </section>
-    </main>
-
-    <footer>
-      <p><strong>ONG Ponte Digital</strong></p>
-      <p>Tecnologia conectando oportunidades.</p>
-      <address><a href="mailto:contato@pontedigital.org.br">contato@pontedigital.org.br</a></address>
-    </footer>
-    <script src="js/script.js"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cadastre-se para participar da ONG Ponte Digital.">
+<title>Cadastre-se | Ponte Digital</title>
+<link rel="icon" href="img/logo/ponte-digital-logo.png" type="image/png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header__inner">
+<a class="brand" href="index.html" aria-label="Ponte Digital — página inicial">
+<img class="brand__logo" src="img/logo/ponte-digital-logo.png" alt="Logo da ONG Ponte Digital" width="240" height="240">
+<span class="brand__text">Ponte <strong>Digital</strong>
+</span>
+</a>
+<nav aria-label="Navegação principal">
+<button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+<span class="menu-icon" aria-hidden="true">
+</span>
+</button>
+<ul class="nav-list" id="menu-principal">
+<li>
+<a href="index.html">Início</a>
+</li>
+<li>
+<a href="projetos.html">Projetos</a>
+</li>
+<li>
+<a href="sobre.html">Sobre</a>
+</li>
+<li>
+<a href="cadastro.html" aria-current="page">Cadastre-se</a>
+</li>
+</ul>
+</nav>
+<div class="header-actions">
+<a class="button button--small header__cta" href="cadastro.html">Quero participar</a>
+</div>
+</div>
+</header>
+<main id="app">
+<section class="section section--light" aria-labelledby="titulo-principal">
+<div class="container form-shell">
+<p class="eyebrow">PARTICIPE DA PONTE DIGITAL</p>
+<h1 id="titulo-principal">Faça parte dessa transformação</h1>
+<p class="lead">Preencha seus dados para contribuir como voluntário, doador ou mentor. Os campos obrigatórios precisam ser preenchidos.</p>
+<div id="alerta-validacao" class="alert alert--error" role="alert" hidden>
+<span aria-hidden="true">!</span>
+<p>Verifique os campos destacados antes de continuar.</p>
+</div>
+<form id="formulario-cadastro" action="#" method="post">
+<fieldset class="form-card">
+<legend><img class="legend-icon" src="img/icons/inclusao.svg" alt="" width="22" height="22">Dados pessoais</legend>
+<p>
+<label for="nome">Nome completo</label>
+<input id="nome" name="nome" type="text" autocomplete="name" minlength="3" maxlength="100" required>
+</p>
+<p>
+<label for="email">E-mail</label>
+<input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+</p>
+<p>
+<label for="cpf">CPF</label>
+<input id="cpf" name="cpf" type="text" inputmode="numeric" autocomplete="off" placeholder="000.000.000-00" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" title="Formato esperado: 000.000.000-00" maxlength="14" required>
+</p>
+<p>
+<label for="nascimento">Data de nascimento</label>
+<input id="nascimento" name="nascimento" type="date" required>
+</p>
+</fieldset>
+<fieldset class="form-card">
+<legend><img class="legend-icon" src="img/icons/email.svg" alt="" width="22" height="22">Contato e endereço</legend>
+<p>
+<label for="telefone">Telefone</label>
+<input id="telefone" name="telefone" type="tel" autocomplete="tel" inputmode="numeric" placeholder="(00) 00000-0000" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" title="Formato esperado: (00) 00000-0000" maxlength="15" required>
+</p>
+<p>
+<label for="cep">CEP</label>
+<input id="cep" name="cep" type="text" autocomplete="postal-code" inputmode="numeric" placeholder="00000-000" pattern="[0-9]{5}-[0-9]{3}" title="Formato esperado: 00000-000" maxlength="9" required>
+</p>
+<p class="full">
+<label for="endereco">Endereço</label>
+<input id="endereco" name="endereco" type="text" autocomplete="address-line1" minlength="5" maxlength="150" required>
+</p>
+<p>
+<label for="cidade">Cidade</label>
+<input id="cidade" name="cidade" type="text" autocomplete="address-level2" minlength="2" maxlength="80" required>
+</p>
+<p>
+<label for="estado">Estado</label>
+<select id="estado" name="estado" autocomplete="address-level1" required>
+<option value="">Selecione</option>
+<option value="AC">Acre</option>
+<option value="AL">Alagoas</option>
+<option value="AP">Amapá</option>
+<option value="AM">Amazonas</option>
+<option value="BA">Bahia</option>
+<option value="CE">Ceará</option>
+<option value="DF">Distrito Federal</option>
+<option value="ES">Espírito Santo</option>
+<option value="GO">Goiás</option>
+<option value="MA">Maranhão</option>
+<option value="MT">Mato Grosso</option>
+<option value="MS">Mato Grosso do Sul</option>
+<option value="MG">Minas Gerais</option>
+<option value="PA">Pará</option>
+<option value="PB">Paraíba</option>
+<option value="PR">Paraná</option>
+<option value="PE">Pernambuco</option>
+<option value="PI">Piauí</option>
+<option value="RJ">Rio de Janeiro</option>
+<option value="RN">Rio Grande do Norte</option>
+<option value="RS">Rio Grande do Sul</option>
+<option value="RO">Rondônia</option>
+<option value="RR">Roraima</option>
+<option value="SC">Santa Catarina</option>
+<option value="SP">São Paulo</option>
+<option value="SE">Sergipe</option>
+<option value="TO">Tocantins</option>
+</select>
+</p>
+</fieldset>
+<fieldset class="form-card">
+<legend><img class="legend-icon" src="img/icons/tecnologia.svg" alt="" width="22" height="22">Área de interesse</legend>
+<p class="full">Como você deseja participar?</p>
+<div class="choice-list full">
+<label>
+<input id="voluntario" name="participacao" type="radio" value="voluntario" required> Voluntário</label>
+<label>
+<input id="doador" name="participacao" type="radio" value="doador"> Doador</label>
+<label>
+<input id="mentor" name="participacao" type="radio" value="mentor"> Mentor de tecnologia</label>
+<label>
+<input id="doador-equipamentos" name="participacao" type="radio" value="doador-equipamentos"> Doador de equipamentos</label>
+</div>
+<p>
+<label for="area">Área de interesse</label>
+<select id="area" name="area" required>
+<option value="">Selecione uma área</option>
+<option value="conecta-jovem">Conecta Jovem</option>
+<option value="pc-para-todos">PC para Todos</option>
+<option value="mentoria-tech">Mentoria Tech</option>
+<option value="descarte-consciente">Descarte Consciente</option>
+</select>
+</p>
+<p class="full">
+<label for="mensagem">Mensagem ou observações</label>
+<textarea id="mensagem" name="mensagem" rows="5" maxlength="500">
+</textarea>
+</p>
+<div class="form-check">
+<input id="termos" name="termos" type="checkbox" required>
+<label for="termos">Li e concordo com os <a href="termos.html">termos de participação</a> e com o tratamento dos dados informados.</label>
+</div>
+<p class="form-actions">
+<button class="button" type="submit">Enviar cadastro</button>
+</p>
+</fieldset>
+</form>
+<section class="demo-panel" aria-labelledby="titulo-demonstracao">
+<h2 id="titulo-demonstracao">Demonstração de feedback</h2>
+<p>Use estes controles para visualizar os componentes desta etapa.</p>
+<div class="demo-panel__actions">
+<button type="button" data-feedback="toast">Mostrar toast</button>
+<button type="button" data-feedback="alerta">Mostrar alerta</button>
+<button type="button" data-feedback="modal">Abrir modal</button>
+</div>
+</section>
+</div>
+</section>
+<div id="toast-sucesso" class="toast toast--success" role="status" aria-live="polite" aria-atomic="true" aria-hidden="true">
+<span class="toast__icon"><img src="img/icons/sucesso.svg" alt="" width="18" height="18"></span>
+<p class="toast__message">
+</p>
+</div>
+<div id="modal-cadastro" class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-modal" aria-describedby="mensagem-modal" hidden>
+<div class="modal__overlay" data-modal-close="true">
+</div>
+<div class="modal__content" role="document" tabindex="-1">
+<button class="modal__close" type="button" aria-label="Fechar confirmação" data-modal-close="true">×</button>
+<img class="modal__status-icon" src="img/icons/sucesso.svg" alt="" width="34" height="34">
+<h2 id="titulo-modal">Cadastro recebido!</h2>
+<p id="mensagem-modal">Obrigado por demonstrar interesse em participar da Ponte Digital.</p>
+<button class="button" type="button" data-modal-close="true">OK</button>
+</div>
+</div>
+</main>
+<footer class="site-footer">
+<div class="container footer__grid">
+<div>
+<a class="brand brand--footer" href="index.html">
+<img class="brand__logo" src="img/logo/ponte-digital-logo.png" alt="Logo da ONG Ponte Digital" width="240" height="240">
+<span class="brand__text">Ponte <strong>Digital</strong>
+</span>
+</a>
+<p>Tecnologia conectando oportunidades.</p>
+</div>
+<div>
+<h2 class="footer__title">Navegação</h2>
+<ul>
+<li>
+<a href="index.html">Início</a>
+</li>
+<li>
+<a href="projetos.html">Projetos</a>
+</li>
+<li>
+<a href="sobre.html">Sobre</a>
+</li>
+<li>
+<a href="cadastro.html">Cadastre-se</a>
+</li>
+</ul>
+</div>
+<div>
+<h2 class="footer__title">Contato</h2>
+<address>
+<a href="mailto:contato@pontedigital.org.br"><img class="footer__email-icon" src="img/icons/email.svg" alt="" width="18" height="18">contato@pontedigital.org.br</a>
+<br>
+<a href="tel:+551140001234">(11) 4000-1234</a>
+</address>
+</div>
+<div>
+<h2 class="footer__title">Newsletter</h2>
+<p>Receba novidades da Ponte Digital.</p>
+<form class="newsletter" action="#" method="post">
+<label class="sr-only" for="newsletter-email">Seu e-mail</label>
+<input id="newsletter-email" name="newsletter-email" type="email" placeholder="Seu melhor e-mail" required>
+<button type="submit">Enviar</button>
+</form>
+</div>
+</div>
+<div class="container footer__bottom">
+<span>© 2026 Ponte Digital — Projeto acadêmico.</span>
+<span>Tecnologia para um futuro mais justo.</span>
+</div>
+</footer>
+<script type="module" src="js/script.js">
+</script>
+</body>
 </html>

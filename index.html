@@ -4,76 +4,233 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ONG Ponte Digital: tecnologia conectando oportunidades por meio da inclusão digital.">
-    <title>Ponte Digital | Inclusão digital e oportunidades</title>
+    <title>Ponte Digital | Tecnologia que transforma vidas</title>
+    <link rel="icon" href="img/logo/ponte-digital-logo.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <header>
-      <a href="index.html" aria-label="Ponte Digital — página inicial">
-        <img src="img/logo/ponte-digital-logo.png" alt="Logo da ONG Ponte Digital" width="240" height="240">
-      </a>
-      <p>Tecnologia conectando oportunidades.</p>
+    <header class="site-header">
+<div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Ponte Digital — página inicial">
+<img class="brand__logo" src="img/logo/ponte-digital-logo.png" alt="Logo da ONG Ponte Digital" width="240" height="240">
+<span class="brand__text">Ponte <strong>Digital</strong>
+</span>
+</a>
       <nav aria-label="Navegação principal">
-        <ul>
-          <li><a href="index.html" aria-current="page">Início</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="cadastro.html">Participe</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section aria-labelledby="titulo-principal">
-        <h1 id="titulo-principal">Tecnologia que aproxima pessoas e cria oportunidades</h1>
-        <p>A Ponte Digital conecta comunidades, voluntários e parceiros para tornar o acesso à tecnologia mais justo.</p>
-        <picture>
-          <source srcset="img/hero/inclusao-digital.webp" type="image/webp">
-          <img src="img/hero/inclusao-digital.jpg" alt="Jovens participando de uma atividade de inclusão digital promovida pela ONG Ponte Digital" width="1672" height="941">
-        </picture>
-        <p><a href="cadastro.html">Participe da Ponte Digital</a></p>
-      </section>
-
-      <section aria-labelledby="quem-somos">
-        <h2 id="quem-somos">Quem somos</h2>
-        <p>A Ponte Digital é uma organização social dedicada a ampliar o acesso à tecnologia e às oportunidades de desenvolvimento pessoal e profissional. Por meio de projetos de inclusão digital, educação tecnológica, reaproveitamento de equipamentos e voluntariado, buscamos aproximar pessoas da transformação proporcionada pela tecnologia.</p>
-      </section>
-
-      <section aria-labelledby="missao">
-        <h2 id="missao">Nossa missão</h2>
-        <p>Promover inclusão digital e ampliar oportunidades por meio da educação, do acesso à tecnologia e da colaboração entre voluntários, comunidades e parceiros.</p>
-      </section>
-
-      <section aria-labelledby="areas-atuacao">
-        <h2 id="areas-atuacao">Áreas de atuação</h2>
-        <ul>
-          <li>Educação tecnológica e competências digitais;</li>
-          <li>Reaproveitamento e doação de equipamentos;</li>
-          <li>Mentoria de carreira em tecnologia;</li>
-          <li>Descarte eletrônico responsável.</li>
-        </ul>
-      </section>
-
-      <section aria-labelledby="conheca-projetos">
-        <h2 id="conheca-projetos">Conheça nossos projetos</h2>
-        <p>As iniciativas da Ponte Digital unem aprendizado, acesso a equipamentos, orientação profissional e cuidado com o meio ambiente.</p>
-        <p><a href="projetos.html">Conhecer os projetos sociais da Ponte Digital</a></p>
-      </section>
-
-      <section aria-labelledby="contato">
-        <h2 id="contato">Contato</h2>
-        <address>
-          ONG Ponte Digital<br>
-          Rua da Conexão, 123, Centro — São Paulo, SP<br>
-          <a href="tel:+551140001234">(11) 4000-1234</a><br>
-          <a href="mailto:contato@pontedigital.org.br">contato@pontedigital.org.br</a>
-        </address>
-      </section>
+<button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+<span class="menu-icon" aria-hidden="true">
+</span>
+</button>
+<ul class="nav-list" id="menu-principal">
+<li>
+<a href="index.html" aria-current="page">Início</a>
+</li>
+<li>
+<a href="projetos.html">Projetos</a>
+</li>
+<li>
+<a href="sobre.html">Sobre</a>
+</li>
+<li>
+<a href="cadastro.html">Cadastre-se</a>
+</li>
+</ul>
+</nav>
+      <div class="header-actions">
+<a class="button button--small header__cta" href="cadastro.html">Quero participar</a>
+</div>
+    </div>
+</header>
+    <main id="app">
+      <section class="hero hero--home" aria-labelledby="titulo-principal">
+<div class="container hero__grid">
+<div class="hero__content hero-copy">
+<div class="hero-copy-inner">
+<p class="eyebrow">TECNOLOGIA COM PROPÓSITO</p>
+<h1 id="titulo-principal">Tecnologia que <span>transforma vidas</span>
+</h1>
+<p class="hero__lead">A Ponte Digital conecta comunidades, voluntários e parceiros para tornar o acesso à tecnologia mais justo.</p>
+<div class="button-row hero-actions">
+<a class="button" href="projetos.html">Conheça nossos projetos</a>
+<a class="button button--ghost" href="cadastro.html">Quero participar</a>
+</div>
+<ul class="hero-benefits" aria-label="Benefícios da Ponte Digital">
+<li class="hero-benefit">
+<img src="img/icons/inclusao.svg" alt="" width="28" height="28">Mais inclusão</li>
+<li class="hero-benefit">
+<img src="img/icons/oportunidades.svg" alt="" width="28" height="28">Mais oportunidades</li>
+<li class="hero-benefit">
+<img src="img/icons/impacto-social.svg" alt="" width="28" height="28">Mais vidas transformadas</li>
+</ul>
+</div>
+</div>
+<img class="hero-divider" src="img/design/hero-divider.svg" alt="" aria-hidden="true">
+<div class="hero__media">
+<picture>
+<source srcset="img/hero/hero-ponte-digital.webp" type="image/webp">
+<img src="img/hero/hero-ponte-digital.jpg" alt="Pessoas participando de atividade de inclusão digital da Ponte Digital" width="1672" height="941">
+</picture>
+</div>
+</div>
+</section>
+      <section class="impact" aria-label="Indicadores ilustrativos de impacto">
+<div class="container impact__grid">
+<div class="impact__item">
+<span class="impact__icon">
+<img src="img/icons/inclusao.svg" alt="" width="24" height="24">
+</span>
+<strong>+500</strong>
+<span>Pessoas impactadas</span>
+</div>
+<div class="impact__item">
+<span class="impact__icon">
+<img src="img/icons/voluntarios.svg" alt="" width="24" height="24">
+</span>
+<strong>+120</strong>
+<span>Voluntários</span>
+</div>
+<div class="impact__item">
+<span class="impact__icon">
+<img src="img/icons/projetos.svg" alt="" width="24" height="24">
+</span>
+<strong>+15</strong>
+<span>Projetos realizados</span>
+</div>
+<div class="impact__item">
+<span class="impact__icon">
+<img src="img/icons/comunidade.svg" alt="" width="24" height="24">
+</span>
+<strong>+8</strong>
+<span>Comunidades atendidas</span>
+</div>
+</div>
+<p class="impact__note">Dados ilustrativos para fins acadêmicos.</p>
+</section>
+      <section class="section section--light" aria-labelledby="quem-somos">
+<div class="container two-column two-column--about">
+<div>
+<p class="eyebrow">QUEM SOMOS</p>
+<h2 id="quem-somos">Sobre a Ponte Digital</h2>
+<p class="lead">A Ponte Digital é uma organização social dedicada a ampliar o acesso à tecnologia e às oportunidades de desenvolvimento.</p>
+<p>Por meio de projetos de inclusão digital, educação tecnológica, reaproveitamento de equipamentos e voluntariado, buscamos aproximar pessoas da transformação proporcionada pela tecnologia.</p>
+<ul class="icon-list">
+<li>
+<img src="img/icons/inclusao.svg" alt="" width="24" height="24"> Inclusão</li>
+<li>
+<img src="img/icons/educacao.svg" alt="" width="24" height="24"> Educação</li>
+<li>
+<img src="img/icons/comunidade.svg" alt="" width="24" height="24"> Comunidade</li>
+<li>
+<img src="img/icons/oportunidades.svg" alt="" width="24" height="24"> Oportunidades</li>
+</ul>
+<a class="text-link" href="sobre.html">Saiba mais sobre nós <span aria-hidden="true">→</span>
+</a>
+</div>
+<div class="section__image">
+<picture>
+<source srcset="img/site/quem-somos.webp" type="image/webp">
+<img src="img/site/quem-somos.jpg" alt="Voluntários e participantes utilizando tecnologia em atividade colaborativa" width="1536" height="1024" loading="lazy">
+</picture>
+</div>
+</div>
+</section>
+      <section class="section" aria-labelledby="missao">
+<div class="container">
+<p class="eyebrow">NOSSA MISSÃO</p>
+<h2 id="missao">Tecnologia para um futuro mais justo</h2>
+<p class="section__intro">Promover inclusão digital e ampliar oportunidades por meio da educação, do acesso à tecnologia e da colaboração.</p>
+<div class="mission-grid">
+<article class="feature-card">
+<span class="feature-card__icon">
+<img src="img/icons/inclusao.svg" alt="" width="28" height="28">
+</span>
+<h3>Inclusão Digital</h3>
+<p>Reduzimos barreiras e aproximamos pessoas do mundo digital.</p>
+</article>
+<article class="feature-card">
+<span class="feature-card__icon">
+<img src="img/icons/educacao.svg" alt="" width="28" height="28">
+</span>
+<h3>Educação</h3>
+<p>Compartilhamos conhecimentos que fortalecem autonomia e confiança.</p>
+</article>
+<article class="feature-card">
+<span class="feature-card__icon">
+<img src="img/icons/oportunidades.svg" alt="" width="28" height="28">
+</span>
+<h3>Oportunidades</h3>
+<p>Conectamos talentos a caminhos de estudo, trabalho e transformação.</p>
+</article>
+</div>
+</div>
+</section>
+      <section class="cta-band" aria-labelledby="cta-titulo">
+<div class="container cta-band__inner">
+<div>
+<p class="eyebrow eyebrow--light">JUNTE-SE A NÓS</p>
+<h2 id="cta-titulo">Faça parte dessa transformação</h2>
+<p>Seu tempo, conhecimento ou equipamento pode abrir novas possibilidades.</p>
+</div>
+<a class="button button--light" href="cadastro.html">Quero participar agora</a>
+</div>
+</section>
     </main>
-
-    <footer>
-      <p><strong>ONG Ponte Digital</strong></p>
-      <p>Tecnologia conectando oportunidades.</p>
-      <p>Projeto acadêmico fictício para a disciplina Desenvolvimento Front-end para Web.</p>
-    </footer>
+    <footer class="site-footer">
+<div class="container footer__grid">
+<div>
+<a class="brand brand--footer" href="index.html">
+<img class="brand__logo" src="img/logo/ponte-digital-logo.png" alt="Logo da ONG Ponte Digital" width="240" height="240">
+<span class="brand__text">Ponte <strong>Digital</strong>
+</span>
+</a>
+<p>Tecnologia conectando oportunidades.</p>
+</div>
+<div>
+<h2 class="footer__title">Navegação</h2>
+<ul>
+<li>
+<a href="index.html">Início</a>
+</li>
+<li>
+<a href="projetos.html">Projetos</a>
+</li>
+<li>
+<a href="sobre.html">Sobre</a>
+</li>
+<li>
+<a href="cadastro.html">Cadastre-se</a>
+</li>
+</ul>
+</div>
+<div>
+<h2 class="footer__title">Contato</h2>
+<address>
+<a href="mailto:contato@pontedigital.org.br"><img class="footer__email-icon" src="img/icons/email.svg" alt="" width="18" height="18">contato@pontedigital.org.br</a>
+<br>
+<a href="tel:+551140001234">(11) 4000-1234</a>
+</address>
+<div class="social-links" role="group" aria-label="Redes sociais decorativas">
+<a href="#" aria-label="Instagram">ig</a>
+<a href="#" aria-label="LinkedIn">in</a>
+<a href="#" aria-label="Facebook">f</a>
+</div>
+</div>
+<div>
+<h2 class="footer__title">Newsletter</h2>
+<p>Receba novidades da Ponte Digital.</p>
+<form class="newsletter" action="#" method="post">
+<label class="sr-only" for="newsletter-email">Seu e-mail</label>
+<input id="newsletter-email" name="newsletter-email" type="email" placeholder="Seu melhor e-mail" required>
+<button type="submit">Enviar</button>
+</form>
+</div>
+</div>
+<div class="container footer__bottom">
+<span>© 2026 Ponte Digital — Projeto acadêmico.</span>
+<span>Tecnologia para um futuro mais justo.</span>
+</div>
+</footer>
+    <script type="module" src="js/script.js">
+</script>
   </body>
 </html>
