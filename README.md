@@ -95,3 +95,9 @@ Nas próximas experiências práticas, o projeto poderá receber melhorias de ac
 A interface foi reorganizada com visual institucional moderno, hero em duas colunas, indicadores de impacto acadêmicos, seção sobre, missão, valores, chamadas para ação e footer com navegação, contato e newsletter. A nova página `sobre.html` mantém explícito que a ONG é fictícia e acadêmica.
 
 O CSS usa tokens de Design System, Grid e Flexbox nativos, cinco breakpoints (480, 768, 1024, 1280 e 1440px), estados de foco/hover e `prefers-reduced-motion`. O JavaScript mantém validações, máscaras, menu acessível, filtros visuais, toast, alerta e modal.
+
+## Arquitetura e fluxo de desenvolvimento
+
+O JavaScript é organizado em módulos ES6: `router.js` concentra a SPA e a History API; `projects.js` renderiza os templates e filtros; `storage.js` mantém somente a preferência de filtro; `form.js` controla validação e feedback; `masks.js`, `menu.js` atendem suas responsabilidades específicas. O arquivo `js/script.js` importa e inicializa esses módulos.
+
+O versionamento segue GitFlow: `main` representa a versão estável, `develop` integra o desenvolvimento e `feature/*` isola tarefas antes de serem revisadas por Pull Request. Para executar localmente, use um servidor estático na raiz do projeto e abra `index.html`.
