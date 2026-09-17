@@ -1,0 +1,25 @@
+{
+  "name": "ponte-digital",
+  "version": "1.0.0",
+  "description": "Projeto acadêmico da disciplina **Desenvolvimento Front-end para Web**, desenvolvido para a Experiência Prática I. A Ponte Digital é uma ONG fictícia que promove inclusão digital, educação tecnológica, reaproveitamento de equipamentos e voluntariado.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NexzyCorporation/ponte-digital.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/NexzyCorporation/ponte-digital/issues"
+  },
+  "homepage": "https://github.com/NexzyCorporation/ponte-digital#readme",
+  "devDependencies": {
+    "vite": "^8.3.0"
+  }
+}

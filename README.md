@@ -90,6 +90,19 @@ Nesta etapa, o projeto recebeu um Design System com variáveis de cor, espaçame
 
 Nas próximas experiências práticas, o projeto poderá receber melhorias de acessibilidade avançada, otimizações, CI/CD e deploy com HTTPS.
 
+## Desenvolvimento e produção
+
+O projeto usa Vite para desenvolvimento e build multipágina, preservando as rotas HTML consumidas pela SPA. É necessário servir os arquivos por HTTP, pois a navegação usa `fetch` e History API.
+
+```bash
+npm install
+npm run dev
+npm run build
+npm run preview
+```
+
+O build é gerado em `dist/`. Os módulos ES6 ficam em `js/modules/`: roteamento, projetos, armazenamento, formulário, máscaras e menu. O projeto mantém `main` como versão estável, `develop` como integração e `feature/*` para tarefas isoladas.
+
 ## Redesign visual — Experiência Prática II
 
 A interface foi reorganizada com visual institucional moderno, hero em duas colunas, indicadores de impacto acadêmicos, seção sobre, missão, valores, chamadas para ação e footer com navegação, contato e newsletter. A nova página `sobre.html` mantém explícito que a ONG é fictícia e acadêmica.
